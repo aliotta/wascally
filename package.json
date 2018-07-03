@@ -6,7 +6,9 @@
   "repository": "https://github.com/leankit-labs/wascally",
   "scripts": {
     "lint": "jshint ./",
-    "test": "gulp test-and-exit"
+    "test": "gulp test-and-exit",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -71,12 +73,14 @@
   "dependencies": {
     "amqplib": "~0.4.0",
     "debug": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.5",
     "machina": "^1.1.2",
     "monologue.js": "^0.3.4",
     "node-uuid": "^1.4.7",
     "postal": "^1.0.7",
     "when": "^3.7.5",
-    "whistlepunk": "^0.3.2"
-  }
+    "whistlepunk": "^0.3.2",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
