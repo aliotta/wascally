@@ -72,7 +72,7 @@
     "amqplib": "~0.4.0",
     "debug": "^2.2.0",
     "lodash": "^3.10.1",
-    "machina": "^1.1.2",
+    "machina": "^4.0.0",
     "monologue.js": "^0.3.4",
     "node-uuid": "^1.4.7",
     "postal": "^1.0.7",
