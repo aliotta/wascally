@@ -6,7 +6,9 @@
   "repository": "https://github.com/leankit-labs/wascally",
   "scripts": {
     "lint": "jshint ./",
-    "test": "gulp test-and-exit"
+    "test": "gulp test-and-exit",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -77,6 +79,8 @@
     "node-uuid": "^1.4.7",
     "postal": "^1.0.7",
     "when": "^3.7.5",
-    "whistlepunk": "^0.3.2"
-  }
+    "whistlepunk": "^1.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
